@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f4f4f4;
+    color: #5c330a;
+}
+
+#container{
+    width: 100vw;
+    overflow-x: hidden ;
+}
+
+header{
+    padding: 2vh 1vw;
+    height: 45vh;
+    background: url(bakeries-pastry-shops.jpg) no-repeat center;
+    background-size: 100vw 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header span{
+    width: 98vw;
+}
+
+
+
+nav.fechado{
+    display: none;
+}
+
+.btn-menu{
+    width:50px;
+}
+
+nav.aberto{
+    height: 50vh;
+    width: 70vw;
+    overflow: hidden;
+    position: absolute;
+    left: 50px;
+    background: rgb(252, 236, 216);
+    box-shadow: #24180175 7px 10px 6px;
+    font-size: 30px;
+    padding: 8vh 1vw 0vh;
+    z-index: 2;
+    
+}
+
+nav ul li a {
+    border: 1px solid #b2875241;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2vh;
+    color: #b28652;
+    padding: .5vh .4vw;
+    text-align: left;
+}
+
+nav .logo-nav{
+    display: none;
+}
+
+#cabecalho{
+ margin-top: 13vh;   
+ text-align: center;
+}
+
+
+
+#cabecalho .chaWaffes{
+    width:80%;
+    filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.445) );
+}
+
+#sobrenos{
+    display: flex;
+    padding: 8vh 2vw 5vh 2vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobreNos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 1vh 0;
+}
+.sobreNos h3{
+    color: #8b5825;
+}
+.sobreNos small{
+    color:#5c330a
+}
+
+#sobrenos img{
+    width: 50px;
+}
+
+#restaurantes{
+    background: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h2-restaurantes{
+    background: #e7e2dc;
+    text-align: center;
+    line-height: 10vh;
+    height: 10vh;
+    color: #643a10;
+}
+
+.restaurante-galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#restaurantes img{
+    width: 50vw;
+    height: 40vh;
+    margin: 1vh 1vw;
+ 
+}
+
+#menuEspecial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0vw 1vh 0vw;
+}
+
+
+.bebida-menu{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+#bebidaNome{
+    text-align: end;
+    font-size: 22px;
+}
+#bebidaDescricao{
+    text-align: center;
+    font-size: 16px;
+}
+
+.bebidaImagem{
+    width: 45vw;
+    height: 30vh;
+    margin-left: 2vw;
+}
+
+
+
+.nav-menuespecial {
+    display: inline-block;
+    margin: 2vh .5vw;
+    height: 12vh;
+    width: 14vw;
+    text-align: center;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.336);    
+}
+
+.nav-menuespecial img{
+    width: 70%;
+    height: 100%;
+    cursor: pointer;
+    
+}
+
+#local{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.local-descricao{
+    padding: 2vh 2vw;
+    font-size: 12px;
+ 
+}
+
+.local-telefone{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+footer{
+    background: #3a291f;
+    color: #9c752b;
+    padding: 1vh 2vw;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+footer a{
+    color: rgb(206, 180, 141);
+}
+
+@media screen and (min-width:820px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+    #container{
+        max-width: 1500px;
+        border: 1px solid rgb(206, 180, 141);
+    }
+
+    .btn-menu{
+        display: none;
+    }
+
+
+    
+    nav.aberto, nav.fechado{
+        width: 100%;   
+        position: static;
+        background: rgba(196, 124, 37, 0.192);
+        box-shadow: #24180175 7px 10px 6px;
+        font-size: 30px;
+        padding: 0;
+        text-align: center;
+        display: block;
+        
+    }
+
+
+    nav ul li{
+        display: inline-block;
+    }
+
+    nav ul li a {
+        border: 1px solid #b2875241;
+        display: inline-block;
+        font-size: 25px;
+        margin-bottom: 0vh;
+        color: #fde2c2;
+        padding: .0vh .0vw;
+        text-align: left;
+        margin: 0 2vw ;
+    }
+
+
+
+
+
+    #sobrenos{
+        flex-direction: row;
+    }
+    .sobreNos{
+        margin: 0 1.5vw;
+    }
+
+    .bebida-menu{
+        width: 50vw;
+    }
+
+    .bebidaImagem{
+        width: 20vw;
+        height: 30vh;
+        margin-left: 2vw;
+    }
+
+    .restaurante-galeria{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #restaurantes img{
+        width: 30vw;
+    }
+
+    #local{
+        flex-direction: row;
+    }
+}
+
