@@ -20,8 +20,8 @@ function abrirMenu(){
 //Menu Especial
 let menuBebidas = [
     {nome:"Chocolate Quente",imagem:"chocolate-hot-cup-png.png",descricao:"Curabitur lacus ante, luctus et varius nec, feugiat et quam. Proin sed tellus consectetur, pretium mi et, viverra nunc. Aliquam dui est, sollicitudin ut ipsum quis"},
-    {nome:"Chá e Biscotos",imagem:"milk-with-cookies.png",descricao:"Curabitur lacus ante, luctus et varius nec, feugiat et quam. Proin sed tellus consectetur, pretium mi et, viverra nunc. Aliquam dui est, sollicitudin ut ipsum quis"},
-    {nome:"Chocolate Quente",imagem:"coffee-cup.png",descricao:"Curabitur lacus ante, luctus et varius nec, feugiat et quam. Proin sed tellus consectetur, pretium mi et, viverra nunc. Aliquam dui est, sollicitudin ut ipsum quis"}
+    {nome:"Chá e Biscotos",imagem:"milk-with-cookies.png",descricao:"Feugiat et quam. Proin sed tellus consectetur, pretium mi et, viverra nunc. Aliquam dui est, sollicitudin ut ipsum quis"},
+    {nome:"Café tradicional",imagem:"coffee-cup.png",descricao:"Luctus et varius nec, feugiat et quam. Proin sed tellus consectetur, pretium mi et, viverra nunc. Aliquam dui est, sollicitudin ut ipsum quis"}
 
 ]
 let bebidasAmostra = document.getElementsByClassName('bebidaImagem')[0] //Imagem
@@ -60,4 +60,4 @@ function bebida3(){
 }
 
 
-
+bebida1()
